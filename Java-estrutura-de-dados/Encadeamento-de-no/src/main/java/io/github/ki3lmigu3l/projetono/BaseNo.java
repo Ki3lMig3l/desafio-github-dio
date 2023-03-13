@@ -1,30 +1,30 @@
 package io.github.ki3lmigu3l.projetono;
 
-public class BaseNo {
+public class BaseNo<T> {
 
-    private String conteudo;
-    private BaseNo proximoNo;
+    private T conteudo;
+    private BaseNo<T> proximoNo;
 
     public BaseNo() {
     }
 
-    public BaseNo(String conteudo) {
+    public BaseNo(T conteudo) {
         this.conteudo = conteudo;
     }
 
-    public String getConteudo() {
+    public T getConteudo() {
         return conteudo;
     }
 
-    public void setConteudo(String conteudo) {
+    public void setConteudo(T conteudo) {
         this.conteudo = conteudo;
     }
 
-    public BaseNo getProximoNo() {
+    public BaseNo<T> getProximoNo() {
         return proximoNo;
     }
 
-    public void setProximoNo(BaseNo proximoNo) {
+    public void setProximoNo(BaseNo<T> proximoNo) {
         this.proximoNo = proximoNo;
     }
 

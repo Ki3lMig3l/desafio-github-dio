@@ -4,19 +4,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        BaseNo no1 = new BaseNo("Conteúdo No: 1");
-        BaseNo no2 = new BaseNo("Conteúdo No: 2");
+        BaseNo<String> no1 = new BaseNo<String>("Conteúdo No: 1");
+        BaseNo<String> no2 = new BaseNo<String>("Conteúdo No: 2");
 
         no1.setProximoNo(no2); // Apontando referencia.
 
-        BaseNo no3 = new BaseNo("Conteúdo No: 3");
+        BaseNo<String> no3 = new BaseNo<String>("Conteúdo No: 3");
 
         no2.setProximoNo(no3);
 
-        BaseNo no4 = new BaseNo("Conteúdo No: 4");
+        BaseNo<String> no4 = new BaseNo<String>("Conteúdo No: 4");
 
-        no3.setProximoNo(no4);
 
+        
         System.out.println("Lista Simples");
 
         System.out.println("\n" + no1);
